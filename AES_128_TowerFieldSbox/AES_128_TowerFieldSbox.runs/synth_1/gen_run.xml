@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcu250-figd2104-2L-e" LaunchTime="1670162552">
+  <File Type="PA-TCL" Name="aes_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="aes_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="aes_top.vds"/>
+  <File Type="RDS-UTIL" Name="aes_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="aes_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="aes_top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/KeyExtend.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/KeyExtend.v"/>
+        <Attr Name="ImportTime" Val="1665888086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MixColumns.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/MixColumns.v"/>
+        <Attr Name="ImportTime" Val="1658571499"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Round.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/Round.v"/>
+        <Attr Name="ImportTime" Val="1665915093"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Round_fin.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/Round_fin.v"/>
+        <Attr Name="ImportTime" Val="1665909317"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ShiftRows.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/ShiftRows.v"/>
+        <Attr Name="ImportTime" Val="1658544608"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SubBytes.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/SubBytes.v"/>
+        <Attr Name="ImportTime" Val="1670146887"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/T.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/T.v"/>
+        <Attr Name="ImportTime" Val="1670146953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/aes_sbox.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v"/>
+        <Attr Name="ImportTime" Val="1670146660"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/round_xor.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/round_xor.v"/>
+        <Attr Name="ImportTime" Val="1665886733"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/aes_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v"/>
+        <Attr Name="ImportTime" Val="1666176211"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AddRoundKey.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/AddRoundKey.v"/>
+        <Attr Name="ImportTime" Val="1658724856"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="aes_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/aes_top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Documents/大学相关/Academic/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/constrs_1/new/aes_top.xdc"/>
+        <Attr Name="ImportTime" Val="1670162549"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/aes_top.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,561 @@
+
+*** Running vivado
+    with args -log aes_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source aes_top.tcl -notrace
+Command: synth_design -top aes_top -part xcu250-figd2104-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13908 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1807.340 ; gain = 229.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes_top' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExtend' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/KeyExtend.v:2]
+INFO: [Synth 8-6157] synthesizing module 'T' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/T.v:2]
+INFO: [Synth 8-6157] synthesizing module 'aes_sbox' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Input' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:42]
+INFO: [Synth 8-6157] synthesizing module 'XOR' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'XOR' (1#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'Input' (2#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:42]
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:72]
+INFO: [Synth 8-6157] synthesizing module 'NAND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'NAND' (3#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:29]
+INFO: [Synth 8-6157] synthesizing module 'NOR' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'NOR' (4#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (5#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:72]
+INFO: [Synth 8-6157] synthesizing module 'Middle' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:110]
+INFO: [Synth 8-6157] synthesizing module 'XNOR' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'XNOR' (6#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Middle' (7#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:110]
+INFO: [Synth 8-6157] synthesizing module 'Bottom' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'Bottom' (8#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:138]
+INFO: [Synth 8-6157] synthesizing module 'Output' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:171]
+INFO: [Synth 8-6155] done synthesizing module 'Output' (9#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:171]
+INFO: [Synth 8-6155] done synthesizing module 'aes_sbox' (10#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_sbox.v:2]
+INFO: [Synth 8-6157] synthesizing module 'round_xor' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/round_xor.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'round_xor' (11#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/round_xor.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'T' (12#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/T.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'KeyExtend' (13#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/KeyExtend.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Round' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/Round.v:2]
+INFO: [Synth 8-6157] synthesizing module 'SubBytes' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/SubBytes.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'SubBytes' (14#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/SubBytes.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ShiftRows' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/ShiftRows.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ShiftRows' (15#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/ShiftRows.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MixColumns' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/MixColumns.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'MixColumns' (16#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/MixColumns.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Round' (17#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/Round.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Round_fin' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/Round_fin.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Round_fin' (18#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/Round_fin.v:3]
+WARNING: [Synth 8-5788] Register temp10_reg in module aes_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'aes_top' (19#1) [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1878.082 ; gain = 300.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1878.082 ; gain = 300.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1878.082 ; gain = 300.309
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.488 . Memory (MB): peak = 1878.082 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/constrs_1/new/aes_top.xdc]
+Finished Parsing XDC File [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/constrs_1/new/aes_top.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 2153.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.276 . Memory (MB): peak = 2153.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2153.230 ; gain = 575.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2153.230 ; gain = 575.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2153.230 ; gain = 575.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2153.230 ; gain = 575.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 11    
+	   2 Input     32 Bit         XORs := 140   
+	   2 Input      8 Bit         XORs := 180   
+	   3 Input      8 Bit         XORs := 90    
+	   5 Input      8 Bit         XORs := 54    
+	   4 Input      8 Bit         XORs := 18    
+	   2 Input      1 Bit         XORs := 13800 
++---Registers : 
+	              128 Bit    Registers := 21    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 144   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aes_top 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 21    
+Module XOR 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module XNOR 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module round_xor 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 10    
+Module T 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+Module MixColumns 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 20    
+	   3 Input      8 Bit         XORs := 10    
+	   5 Input      8 Bit         XORs := 6     
+	   4 Input      8 Bit         XORs := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+Module Round 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module Round_fin 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[127]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[126]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[125]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[124]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[123]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[122]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[121]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[120]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[119]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[118]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[117]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[116]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[115]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[114]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[113]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[112]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[111]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[110]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[109]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[108]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[107]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[106]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[105]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[104]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[103]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[102]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[101]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[100]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[99]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[98]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[97]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[96]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[95]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[94]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[93]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[92]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[91]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[90]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[89]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[88]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[87]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[86]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[85]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[84]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[83]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[82]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[81]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[80]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[79]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'round_key_10_reg[78]/Q' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.srcs/sources_1/new/aes_top.v:42]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:49 . Memory (MB): peak = 2279.996 ; gain = 702.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:00 ; elapsed = 00:02:02 . Memory (MB): peak = 2590.961 ; gain = 1013.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:21 ; elapsed = 00:02:24 . Memory (MB): peak = 3104.828 ; gain = 1527.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:36 ; elapsed = 00:02:39 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:40 ; elapsed = 00:02:43 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:40 ; elapsed = 00:02:43 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |   818|
+|4     |LUT3 |   448|
+|5     |LUT4 |  1821|
+|6     |LUT5 |  1389|
+|7     |LUT6 |  6207|
+|8     |FDCE |  1280|
+|9     |FDRE |   128|
+|10    |IBUF |   258|
+|11    |OBUF |   128|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 12479|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3840 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:24 ; elapsed = 00:02:33 . Memory (MB): peak = 4523.648 ; gain = 2670.727
+Synthesis Optimization Complete : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 4523.648 ; gain = 2945.875
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 4523.648 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 259 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'aes_top' is not ideal for floorplanning, since the cellview 'aes_top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4523.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 259 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 258 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 2 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:01 ; elapsed = 00:03:07 . Memory (MB): peak = 4523.648 ; gain = 4084.605
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4523.648 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/10096/Documents/AES/Vivado/aes_128_bz_Sbox/aes_128_bz.runs/synth_1/aes_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file aes_top_utilization_synth.rpt -pb aes_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  4 22:05:53 2022...
